@@ -40,7 +40,7 @@ namespace BaiTapLab.Controllers
             _dbContext.Courses.Add(course);
             _dbContext.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Home"); 
         }
     }
 }
