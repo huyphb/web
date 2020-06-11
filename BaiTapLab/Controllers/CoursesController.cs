@@ -28,6 +28,7 @@ namespace BaiTapLab.Controllers
         }
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewModel)
         {
             var course = new Course
@@ -38,7 +39,15 @@ namespace BaiTapLab.Controllers
                 Place = viewModel.Place
             };
             _dbContext.Courses.Add(course);
-            _dbContext.SaveChanges();
+            try
+            {
+                _dbContext.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                String n = e.InnerException.ToString();
+            }
+           
 
             return RedirectToAction("Index", "Home"); 
         }

@@ -22,3 +22,7 @@ select,
 textarea {
     max-width: 280px;
 }
+.navbar-inverse {
+    background-color: #c11c1c;
+    border-color: #d22121;
+}
