@@ -13,7 +13,7 @@ namespace BaiTapLab.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202006110803571_PopulateCategoryTable"; }
+            get { return "202006180729272_PopulateCategoryTable"; }
         }
         
         string IMigrationMetadata.Source
