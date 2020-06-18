@@ -26,3 +26,34 @@ textarea {
     background-color: #c11c1c;
     border-color: #d22121;
 }
+.course {
+    list-style: none;
+}
+
+    .course > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+        .course > li > .date {
+            text-align: center;
+            background-color: #d41d50;
+            color: white;
+            width: 60px;
+            border-radius: 8px;
+        }
+
+        .course > li > .details {
+            position: absolute;
+            top: 0px;
+            left: 70px;
+            display: grid;
+        }
+
+
+        /* action */
+        .course > li .action {
+            display: none;
+            left: 70px;
+            position: absolute;
+        }
